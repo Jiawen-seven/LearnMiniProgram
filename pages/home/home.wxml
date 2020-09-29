@@ -1,0 +1,3 @@
+<!--home.wxml-->
+<text class="seven">你好，小程序</text>
+<button size="mini">按钮</button>

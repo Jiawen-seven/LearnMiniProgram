@@ -1,0 +1,4 @@
+/* home.wxss */
+.seven{
+  color: red;
+}
