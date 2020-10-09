@@ -1,3 +1,5 @@
 {
-
+  "navigationBarTitleText": "关于",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#ffff00"
 }
