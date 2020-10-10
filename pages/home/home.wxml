@@ -1,8 +1,13 @@
 <!--home.wxml-->
 <text class="seven">你好，小程序</text>
-<button size="mini">按钮</button>
+<button size="mini" bindtap="buttonclick">按钮</button>
 <button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取授权</button>
 <view>
   <open-data type="userNickName"></open-data>
   <open-data type="userAvatarUrl"></open-data>
+  <open-data type="userAvatarUrl"></open-data>
 </view>
+<!-- 以下是显示从服务器中获取的数据，但接口不存在，所以没法显示咯 -->
+<!-- <view wx:for="{{list}}">{{item.title}}</view> -->
+
+<view>{{message}}</view>
