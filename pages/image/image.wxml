@@ -1,0 +1,3 @@
+<!--pages/image/image.wxml-->
+<button bindtap="seven">选择相册中的图片</button>
+<image src="{{path}}" bindload="loadclick" show-menu-by-longpress></image>

@@ -1,0 +1,5 @@
+/* pages/button/button.wxss */
+.seven{
+  background-color: rosybrown;
+  color: white;
+}

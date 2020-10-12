@@ -1,0 +1,23 @@
+<!-- 方法一：直接在wxml中写 -->
+<!-- <wxs module="info">
+  //js代码（es5语法）
+  var name = "seven"
+  var message = "king"
+  function sum(num1,num2){
+    return num1 + num2
+  }
+  module.exports={
+    name: name,
+    message: message,
+    sum: sum
+  }
+</wxs> -->
+
+<!-- 方法二：抽离到wxs文件，然后导入 -->
+<wxs src="./wxs.wxs" module="info"/>
+<view>{{info.name}}</view>
+<view>{{info.message}}</view>
+<view>{{info.sum(1,2)}}</view>
+
+<view>{{price}}</view>
+<view>{{info.change(price)}}</view>

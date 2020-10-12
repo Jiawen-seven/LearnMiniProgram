@@ -1,0 +1,27 @@
+<!-- wx:if -->
+<view wx:if="{{score >= 90}}">优秀</view>
+<view wx:if="{{score >= 80 && score < 90}}">良好</view>
+<view wx:if="{{score >= 60 && score < 80}}">及格</view>
+<view wx:if="{{score < 60}}">不及格</view>
+
+<!-- wx:for -->
+<view wx:for="{{['abc','seven','king']}}">{{item}} {{index}}</view>
+<view wx:for="{{9}}">{{item}}</view>
+<view wx:for="abc">{{item}}</view>
+
+<!-- block标签 -->
+<block wx:for="{{3}}">
+  <button>123</button>
+  <view>123</view>
+</block>
+
+<!-- template模板的用法 -->
+<!-- 定义 -->
+<!-- <template name="seven"> 
+  <button>{{btntext}}</button>
+  <view>{{content}}</view>
+</template> -->
+<import src="./template.wxml"/>
+
+<!-- 使用 -->
+<template is="seven" data="{{btntext: '按钮',content: '内容'}}"></template>

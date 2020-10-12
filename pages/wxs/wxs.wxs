@@ -1,0 +1,14 @@
+var name = "seven"
+var message = "king"
+function sum(num1,num2){
+  return num1 + num2
+}
+function change(price){
+  return price.toFixed(2)
+}
+module.exports={
+  name: name,
+  message: message,
+  sum: sum,
+  change: change
+}

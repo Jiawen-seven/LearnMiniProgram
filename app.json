@@ -1,6 +1,13 @@
 {
   "pages": [
+    "pages/wxs/wxs",
+    "pages/wxml/wxml",
+    "pages/wxss/wxss",
+    "pages/image/image",
+    "pages/button/button",
+    "pages/text/text",
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "sitemapLocation": "sitemap25.json"
 }

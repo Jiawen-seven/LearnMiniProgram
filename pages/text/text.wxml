@@ -1,0 +1,18 @@
+<!--pages/text/text.wxml-->
+<!-- 1.text的基本使用 -->
+<text>seven\n</text>
+<text>king\n</text>
+
+<!-- 2.默认情况下长按是不能选中的，添加了selectable属性即可，要用真机测试才行-->
+<text selectable>123456\n</text>
+
+<!-- 3.决定文本空格的大小 -->
+<!-- nbsp:根据字体设置的空格大小; ensp:半个中文字符大小; emsp:一个中文字符大小 -->
+<text>hello world\n</text>
+<text space="nbsp">hello world\n</text>
+<text space="ensp">hello world\n</text>
+<text space="emsp">hello world\n</text>
+
+<!-- 4.是否解码 -->
+<text>5 &gt; 3\n</text>
+<text decode>5 &gt; 3</text>
