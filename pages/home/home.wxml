@@ -1,3 +1,16 @@
 <!--home.wxml-->
-<text class="seven">你好，小程序</text>
-<button size="mini">按钮</button>
+<view>-----------------展示弹窗-------------------</view>
+<button size="mini" bind:tap="buttonclick">按钮</button>
+
+<view>-----------------页面分享-------------------</view>
+<button size="mini" open-type="share">我是分享按钮</button>
+
+<view>-----------------页面跳转-------------------</view>
+<view>1.通过navigator组件跳转</view>
+<navigator url="/pages/detail/detail">跳转到详情页</navigator>
+<navigator url="/pages/detail/detail?name=seven&&age=18">跳转到详情页并传递数据</navigator>
+<view>{{title}}</view>
+<view>2.通过代码进行页面跳转</view>
+<button bind:tap="detailclick">跳转到详情页</button>
+
+
