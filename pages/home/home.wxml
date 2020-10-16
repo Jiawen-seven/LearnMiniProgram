@@ -1,3 +1,21 @@
 <!--home.wxml-->
-<text class="seven">你好，小程序</text>
-<button size="mini">按钮</button>
+<!-- 1.轮播图展示 -->
+<my-swiper list="{{banner}}"/>
+
+<!-- 2.推荐数据的展示 -->
+<my-recommend recommend="{{recommend}}" bind:imageload="imageload"/>
+
+<!-- 3.本周流行的展示 -->
+<my-popular/>
+
+<!-- 4.tab-control -->
+<my-tab-control title="{{title}}" bind:itemclick="itemclick" class="{{isTabFixed ? 'isFixed': ''}}" id="tab-control"/>
+<!-- 下面的是用于占位的 -->
+<my-tab-control title="{{title}}" wx:if="{{isTabFixed}}"/>  
+
+<!-- 5.展示商品数据 -->
+<my-goods goods="{{good[currentType].list}}"/>
+
+<!-- 6.回到顶部 -->
+<!-- 这里不用hidden，因为hidden对自定义组件是无效的 -->
+<my-back-top wx:if="{{showBackTop}}"/>

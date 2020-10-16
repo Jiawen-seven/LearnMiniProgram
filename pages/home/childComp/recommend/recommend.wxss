@@ -1,0 +1,19 @@
+/* pages/home/childComp/recommend.wxss */
+.recommend{
+  display: flex;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 15rpx solid rgb(223, 223, 223);
+}
+.recommend-item{
+  flex: 1 ;
+  text-align: center;
+}
+.recommend-image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.recommend-text{
+  font-size: 30rpx;
+  color: #777;
+}

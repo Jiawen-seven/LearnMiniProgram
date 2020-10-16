@@ -1,0 +1,35 @@
+/* components/good-item/good-item.wxss */
+.gooditem{
+  text-align: center;
+  color: #333;
+  padding-bottom: 85rpx; /*这个一定要有，是为desc-info预留的空间*/
+}
+.item-image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.desc-info{
+  position: absolute;/*使用该定位之后，原本组件的位置会消失，所以上面的设置是为了预留这里的空间*/
+  left: 0;
+  right: 0;
+  bottom: 5rpx;
+}
+.item-title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 30rpx;
+}
+.base-info{
+  font-size: 28rpx;
+}
+.item-price{
+  color: #ff5777;
+}
+.item-star{
+  width: 30rpx;
+  height: 30rpx;
+  padding: 0 5rpx 0 15rpx;
+  position: relative;
+  top:4rpx;
+}
